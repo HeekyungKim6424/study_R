@@ -218,4 +218,11 @@ head(df)
 install.packages("reshape2")
 library("reshape2")
 set.seed(123) #내 기억에 이게 난수 고정으로 기억하고 있음
-df=data.frame(Obs=1:4)
+df=data.frame(
+              A=sample(10:99, size = 4),
+              B=sample(10:99, size = 4),
+              C=sample(10:99, size = 4)) #Obs는 해당 행과 열을 맞춰서 써야 하는것 같다.
+                                         #왜 필요한건지 잘 모르겠음
+                                         #Obs는 순번을 써주는거다 1열에 들어가는 
+#sample: 단순임의 추출(simple random sampling)
+
